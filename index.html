@@ -12,40 +12,39 @@
 <body>   
 
     <!--шапка страницы-->
-    <header>
-        <div class="conteiner flaxbox">        
-            <nav class="navigation">
-                <a href="./index.html" class="logo"><span class="web">Web</span> Studio</a>
-                <ul class="site-nav list">  
-                    <li class="link-item">
-                        <a href="./index.html" class="curent-link">Студия</a>
-                    </li>
-                    <li class="link-item">
-                        <a href="./portfolio.html">Портфолио</a>
-                    </li>
-                    <li class="link-item">
-                        <a href="">Контакты</a>
-                    </li>      
-                </ul>
-            </nav>
-            <ul class="site-auth list">  
+    <header  class="conteiner page-header">
+        <nav class=" navigation">
+            <a href="./index.html" class="logo"><span class="web">Web</span> Studio</a>
+            <ul class="site-nav list">  
                 <li class="link-item">
-                    <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    <a href="./index.html" class="curent-link">Студия</a>
                 </li>
                 <li class="link-item">
-                    <a href="tel:+380961111111">+38 096 111 11 11</a>
+                    <a href="./portfolio.html">Портфолио</a>
                 </li>
+                <li class="link-item">
+                    <a href="">Контакты</a>
+                </li>      
             </ul>
-        </div>
+        </nav>
+
+        <ul class="site-auth list">  
+            <li class="link-item">
+                <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+            <li class="link-item">
+                <a href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
+        </ul>
     </header>
     <main>
 
         <!--hero--->
-        <section class="hero section">
-            <div class="">            
-                <h1 class="hero-title">Эффективные решения</br> для вашего бизнеса</h1>
-                <a href="" class="button primary">Заказать услугу</a>
+        <section class="hero">
+            <div class="conteiner hero-conteiner">
                 <img src="./images/Header.png" alt="рабочий колектив работает над проэктом">
+                <h1 class="hero-title">Эффективные решения</br> для вашего бизнеса</h1>
+                <a href="" class="button primary">Заказать услугу</a>    
             </div>
         </section>
 
@@ -55,22 +54,22 @@
                 <h2 hidden>Oсобенности</h2>
                 <ul class="list features">
                     <li class="features-box">
-                        <img src="./images/svg/antenna.svg" class="pic" alt="антена">
+                        <img src="./images/svg/antenna.svg" alt="антена">
                         <h2 class="title">Внимание к деталям</h2>
                         <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                     </li>
                     <li class="features-box">
-                        <img src="./images/svg/clock.svg" class="pic" alt="часы">
+                        <img src="./images/svg/clock.svg" alt="часы">
                         <h2 class="title">Пунктуальность</h2>
                         <p>Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                     </li>
                     <li class="features-box">
-                        <img src="./images/svg/diagram.svg" class="pic" alt="диаграмма">
+                        <img src="./images/svg/diagram.svg" alt="диаграмма">
                         <h2 class="title">Планирование</h2>
                         <p>Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                     </li>
                     <li class="features-box">
-                        <img src="./images/svg/astronaut.svg" class="pic" alt="астронавт">
+                        <img src="./images/svg/astronaut.svg" alt="астронавт">
                         <h2 class="title">Современные технологии</h2>
                         <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий</p>
                     </li>
@@ -102,7 +101,7 @@
         <!--наша команда-->
         <section class="section">
             <div class="conteiner team">
-                <h2 class="section-title our-team">Наша команда</h2>
+                <h2 class="section-title">Наша команда</h2>
                 <ul class="list team">
                     <li class="team-member 1">
                         <img src="./images/команда/николай.jpg" alt="фото работника" width="270">
@@ -112,17 +111,19 @@
                         <ul class="list social-links-box">
                             <li class="social-links">
                                 <a href=""></a>
-                                <img class="link social-link-item" src="./images/social-links/instagram.svg" 
-                                alt="ссылка на инстаграм">
+                                <img src="./images/social-links/instagram.svg" alt="ссылка на инстаграм">
+                            </li>
+                            <li class="social-links">
                                 <a href=""></a>
-                                <img class="link social-link-item" src="./images/social-links/twitter.svg" 
-                                alt="ссылка на твитер">
+                                <img src="./images/social-links/twitter.svg" alt="ссылка на твитер">
+                            </li>
+                            <li class="social-links">
+                            <a href=""></a>
+                                <img src="./images/social-links/facebook.svg" alt="ссылка на фейсбук">
+                            </li>
+                            <li class="social-links">    
                                 <a href=""></a>
-                                <img class="link social-link-item" src="./images/social-links/facebook.svg" 
-                                alt="ссылка на фейсбук">
-                                <a href=""></a>
-                                <img class="link social-link-item" src="./images/social-links/linkedin.svg" 
-                                alt="ссылка на линкедин"> 
+                                <img src="./images/social-links/linkedin.svg" alt="ссылка на линкедин"> 
                             </li>
                         </ul>  
                     </li>
@@ -135,10 +136,16 @@
                             <li class="social-links">
                                 <a href=""></a>
                                 <img src="./images/social-links/instagram.svg" alt="ссылка на инстаграм">
+                            </li>
+                            <li class="social-links">
                                 <a href=""></a>
                                 <img src="./images/social-links/twitter.svg" alt="ссылка на твитер">
-                                <a href=""></a>
+                            </li>
+                            <li class="social-links">
+                            <a href=""></a>
                                 <img src="./images/social-links/facebook.svg" alt="ссылка на фейсбук">
+                            </li>
+                            <li class="social-links">    
                                 <a href=""></a>
                                 <img src="./images/social-links/linkedin.svg" alt="ссылка на линкедин"> 
                             </li>
@@ -153,10 +160,16 @@
                             <li class="social-links">
                                 <a href=""></a>
                                 <img src="./images/social-links/instagram.svg" alt="ссылка на инстаграм">
+                            </li>
+                            <li class="social-links">
                                 <a href=""></a>
                                 <img src="./images/social-links/twitter.svg" alt="ссылка на твитер">
-                                <a href=""></a>
+                            </li>
+                            <li class="social-links">
+                            <a href=""></a>
                                 <img src="./images/social-links/facebook.svg" alt="ссылка на фейсбук">
+                            </li>
+                            <li class="social-links">    
                                 <a href=""></a>
                                 <img src="./images/social-links/linkedin.svg" alt="ссылка на линкедин"> 
                             </li>
@@ -171,10 +184,16 @@
                             <li class="social-links">
                                 <a href=""></a>
                                 <img src="./images/social-links/instagram.svg" alt="ссылка на инстаграм">
+                            </li>
+                            <li class="social-links">
                                 <a href=""></a>
                                 <img src="./images/social-links/twitter.svg" alt="ссылка на твитер">
-                                <a href=""></a>
+                            </li>
+                            <li class="social-links">
+                            <a href=""></a>
                                 <img src="./images/social-links/facebook.svg" alt="ссылка на фейсбук">
+                            </li>
+                            <li class="social-links">    
                                 <a href=""></a>
                                 <img src="./images/social-links/linkedin.svg" alt="ссылка на линкедин"> 
                             </li>
@@ -219,44 +238,45 @@
     </main>
     
     <!--подвал-->
-    <footer class="footer">
-        <div>        
+    <footer class="section">
+        <div class="conteiner footer">   
+            
             <!--контакты-->
-            <div>
+            <div class="footer-box footer-contacts">
                 <a href="./index.html" class="logo logo-footer"><span class="web">Web</span> Studio</a>
-                <address>
-                    г. Киев, пр-т Леси Украинки, 26 
-                </address>  
+                <address class="address-item">г. Киев, пр-т Леси Украинки, 26</address>  
                 <ul class="list contacts">
-                    <li>info@exemple.com</li>
-                    <li>+38 099 111 11 11</li>
+                    <li class="contacts-item">info@exemple.com</li>
+                    <li class="contacts-item">+38 099 111 11 11</li>
                 </ul>     
             </div>
+
             <!--соц.сети-->
-            <div>
-                <p>Присоеденайтесь</p>
-                <ul class="list">
-                    <li>
+            <div class="footer-box join ">
+                <p class="text-footer">Присоеденайтесь</p>
+                <ul class="list links-box-footer">
+                    <li class="social-links-footer">
                         <img src="./images/social-links/instagram.svg" alt="ссылка на инстаграм">
-                        <a href="./images/social-links/instagram.svg" aria-label="Cсылка на instagram">instagram</a>
+                        <a href="" aria-label="Cсылка на instagram"></a>
                     </li>
-                    <li>
+                    <li class="social-links-footer">
                         <img src="./images/social-links/twitter.svg" alt="ссылка на твитер">
-                        <a href="./images/social-links/twitter.svg" aria-label="Cсылка на twitter">twitter</a>
+                        <a href="" aria-label="Cсылка на twitter"></a>
                     </li>
-                    <li>
+                    <li class="social-links-footer">
                         <img src="./images/social-links/facebook.svg" alt="ссылка на фейсбук">
-                        <a href="./images/social-links/facebook.svg" aria-label="Cсылка на facebook">facebook</a>
+                        <a href="" aria-label="Cсылка на facebook"></a>
                     </li>
-                    <li>
+                    <li class="social-links-footer">
                         <img src="./images/social-links/linkedin.svg" alt="ссылка на линкедин">
-                        <a href="./images/social-links/linkedin.svg" aria-label="Cсылка на linkedin">linkedin</a>
+                        <a href="" aria-label="Cсылка на linkedin"></a>
                     </li>
                 </ul>
             </div>
+
             <!--подписка на россылку-->
-            <div>
-                <p>подпишитесь на россылку</p>
+            <div class="footer-box registery">
+                <p class="text-footer">подпишитесь на россылку</p>
                 <a href="" class="button secondary">Подписаться</a>
             </div>
         </div>
