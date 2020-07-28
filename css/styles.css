@@ -1,12 +1,14 @@
-/* .conteiner.page-header {
+.hero-title {
+    background-color: darkgray;
+ }
+/*    
+}.conteiner.page-header {
     background-color: #ff9691;
 }
 .hero {
     background-color: bisque;
 }
-.hero-title {
-    background-color: darkgray;
-}
+
 .conteiner.specifications {
     background-color: rgb(186, 243, 245);
 }
