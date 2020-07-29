@@ -138,6 +138,10 @@ h1,h2,h3,h4,h5 {
     padding: 0;
 }
 
+.conteiner.hero-conteiner >img {
+    display: block;
+}
+
 .hero-title {
     margin: 0;
     text-transform: uppercase;
@@ -337,7 +341,6 @@ h1,h2,h3,h4,h5 {
 
 footer {
     background: #2F303A;
-    height: 252px;
 }
 
 .conteiner.footer {
