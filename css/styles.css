@@ -1,8 +1,8 @@
-.navigation,
+/* .navigation,
 .site-nav,
 .site-auth {
    outline: 1px solid black; 
-}
+} */
 
 
 :root {
@@ -86,62 +86,58 @@ h1,h2,h3,h4,h5 {
     margin-right: auto;
 }
 
-.navigation {
-    display: flex;
-    margin-right: auto; 
-}
-
 .page-header {
     display: flex;
     height: 80px;
-    /* padding-top: 25px;
-    padding-bottom: 25px; */
     border-bottom: 1px solid #ECECEC;
+}
+
+.navigation, 
+.site-nav,
+.site-auth {
+    display: flex;
+    align-items: center;
+    margin-right: auto; 
 }
 
 .navigation .logo {
     width: 153px;
-    margin-right: 85px;
-    padding-top: 24px;
+    padding-top: 25px;
     padding-bottom: 25px;
+    margin-right: 85px;
 }
 
-.site-nav a,
-.site-auth a {
+.link-item > .contact-link,
+.link-item > .link {
+    /* margin-left: auto; */
+    padding-top: 32px;
+    padding-bottom: 32px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
-    color: var(--primary-text-color);
     text-decoration: none;
-}
-
-.site-nav {
-    display: flex;
-    padding-top: 32px;
-}
-
-.site-auth {
-    display: flex;
-    align-items: center;
+    color: var(--primary-text-color);
 }
 
 .site-nav .link-item:not(:first-child) { 
     margin-left: 50px;
 }
 
-.site-auth .link-item:not(:first-child) { 
-    margin-left: 30px;
+.site-auth .contact-link {
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+    max-height: 80px;
 }
 
-.contact-link {
-    display: inline-block;
-    max-height: 153px;
+.site-auth .link-item:not(:first-child) { 
+    margin-left: 30px;
 }
 
 .header-svg {
     margin-right: 10px;
     width: 16px;
-    height: 11px;
+    height: 11.2px;
 }
 
 .site-nav a:hover,
@@ -382,12 +378,14 @@ h1,h2,h3,h4,h5 {
     background-color: var(--accent-color);
 }
 
-
 .icon-svg {
     width: 20px;
     height: 20px;
 }
 
+.icon-svg:hover {
+    fill: var(--accent-color);
+}
 .icon-link:hover,
 .icon-link:focus {
     color: var(--accent-color);
@@ -404,7 +402,24 @@ h1,h2,h3,h4,h5 {
     margin-right: 30px;
 }
 
+.icon-client-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 90px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    /* color: ; */
+}
 
+.icon-client-link:hover {
+    color: var(--accent-color);
+}
+
+.client-svg:hover {
+    fill: var(--accent-color);
+}
 /* FOOTER */
 
 footer {
